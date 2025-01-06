@@ -1,0 +1,11 @@
+[Unit]
+Description=Internet Service Provider monitor main task timer
+Requires=ispMonMain.service
+
+[Timer]
+Unit=ispMonMain.service
+OnCalendar=*:*:0/5
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=Internet Service Provider monitor main task
+Wants=ispMonMain.timer
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/USERNAME/isp_monitor
+ExecStart=/home/USERNAME/isp_monitor/isp_mon_main.sh
+
+[Install]
+WantedBy=multi-user.target

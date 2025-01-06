@@ -1,0 +1,11 @@
+[Unit]
+Description=Internet Service Provider monitor outage reporting sidecar
+Wants=ispMonCollate.timer
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/USERNAME/isp_monitor
+ExecStart=/home/USERNAME/isp_monitor/isp_mon_collate.sh
+
+[Install]
+WantedBy=multi-user.target
