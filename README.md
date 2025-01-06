@@ -1,9 +1,9 @@
-#Multi-network ISP monitor
+# Multi-network ISP monitor
 Detects and reports outages of internet service. 
 I'm running this on a linux box connected to each of the networks I'm testing in parallel.
 This is pretty ugly but it gives me something to complain to my ISP about.
 
-##Configuration
+## Configuration
  - use `ip -a link` to determine interfaces and their order
  - populate in desired order in `config_interfaces`
  - make sure `config_ping` and `config_curl` are populated with endpoints
@@ -17,7 +17,7 @@ cp isp_mon_outages.csv.kickstart isp_mon_outages.csv
  - update schedule interval in `ispMonMain.timer` and `ispMonCollate.timer` if needed
 
     
-##Installation
+## Installation
  - copy application files to working directory on host system
  - make sure all scripts are executable, update if not
 ```bash
