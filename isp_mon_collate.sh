@@ -117,4 +117,4 @@ writeLast
 }
 
 #clean up tmp file
-rm -f $collateTempFile
+#rm -f $collateTempFile

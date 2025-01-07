@@ -4,8 +4,8 @@ Requires=ispMonCollate.service
 
 [Timer]
 Unit=ispMonCollate.service
-OnCalendar=hourly
-AccuracySec=1m
+OnCalendar=*:4:3
+AccuracySec=1s
 
 [Install]
 WantedBy=timers.target

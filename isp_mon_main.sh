@@ -51,4 +51,4 @@ echo $log_result >> $rawLogFile
 }
 
 #clean up tmp file
-rm -f $tmpLogFile
+#rm -f $tmpLogFile
